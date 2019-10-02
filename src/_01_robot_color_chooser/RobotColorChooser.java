@@ -8,6 +8,7 @@ import javax.swing.JOptionPane;
 import org.jointheleague.graphical.robot.Robot;
 
 import java.awt.Color;
+import java.util.Random;
 
 public class RobotColorChooser {
 	public static void main(String[] args) {
@@ -26,12 +27,17 @@ public class RobotColorChooser {
 		//5. Use an if/else statement to set the pen color that the user requested
 if(b.contentEquals("gray")) {a.setPenColor(Color.gray);
 }
-if(b.contentEquals("white")) {a.setPenColor(Color.white);
+else if(b.contentEquals("white")) {a.setPenColor(Color.white);
 }
-if(b.contentEquals("black")) {a.setPenColor(Color.black);
-}
+else if(b.contentEquals("black")) {a.setPenColor(Color.black);
 
-//6. If the user doesn’t enter anything, choose a random color
+
+
+}else {
+	a.setRandomPenColor();
+}
+//6.if user doesn't enter a number choose a random color
+
 
         //7. Put a loop around your code so that you keep asking the user for more colors & drawing them
 		
