@@ -3,19 +3,19 @@ void draw() {
 Then put his head on using drawBeeFace(x,y)
 Use Modulo to make the colors alternate 
 */
-for( int i = 1;i>=8;i++){
-  if (1%2==0){
-    fill(#fff9bb);
+for( int i = 1;i<20;i++){
+  if (i%2==0){
+    fill(#C1BC21);
   
 }
 else{
 fill(#000000);
 
 }
- ellipse(950,500,100,100);
+ ellipse(20*i,20*i,50,50);
 
 }  
- 
+ drawBeeFace(400,400);
 }
 
 
